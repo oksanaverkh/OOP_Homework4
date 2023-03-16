@@ -1,5 +1,6 @@
 import java.util.List;
+import java.util.ArrayList;
 
-public abstract class VendingMachine {
-    abstract String getProduct(String name);
+public interface VendingMachine {
+    abstract List getProduct(String name);
 }

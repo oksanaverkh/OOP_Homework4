@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class HotDrink extends Product{
+public class HotDrink extends Product {
     private String name;
     private int price;
     private int temperature;
@@ -61,19 +61,20 @@ public class HotDrink extends Product{
         this.temperature = temperature;
     }
 
-    public static void getListOfAvailableDrinks() {
-        List<String> allDrinks = new ArrayList<>(Arrays.asList("Black tea", "Green tea", "Hot chocolate", "Americano", "Latte"));
+    public void getListOfAvailableDrinks() {
+        List<String> allDrinks = new ArrayList<>(
+                Arrays.asList("black tea", "green tea", "hot chocolate", "americano", "latte"));
         System.out.println(allDrinks);
     }
 
-    public static void getListOfAvailableVolumes() {
+    public void getListOfAvailableVolumes() {
         List<String> allVolumes = new ArrayList<>(Arrays.asList("100", "200", "400"));
         System.out.println(allVolumes);
     }
 
-    public static void getListOfAvailableTemperarures() {
+    public void getListOfAvailableTemperarures() {
         List<String> allTemps = new ArrayList<>(Arrays.asList("60", "70", "80"));
         System.out.println(allTemps);
     }
-        
+
 }
